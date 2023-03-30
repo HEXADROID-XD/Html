@@ -18,6 +18,9 @@ function onSubmit(e) {
       setTimeout(() => msg.remove(), 3000);
     } else {
       console.log(`${nameInput.value} ${emailInput.value}`)
+      localStorage.setItem('user name',nameInput.value);
+      localStorage.setItem('user email',emailInput.value)
     }
+    
   }
    
